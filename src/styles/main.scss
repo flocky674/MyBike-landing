@@ -1,3 +1,74 @@
-body {
-  margin: 0;
+@import "reset";
+@import "utils";
+
+@import "blocks/container.scss";
+@import "blocks/grid.scss";
+@import "blocks/logo.scss";
+@import "blocks/icon.scss";
+@import "blocks/button.scss";
+@import "blocks/form-field.scss";
+
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/about.scss";
+@import "blocks/bikes.scss";
+@import "blocks/bike.scss";
+@import "blocks/gallery.scss";
+@import "blocks/details.scss";
+@import "blocks/contact-us.scss";
+@import "blocks/footer.scss";
+
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background: $mainHoverColor;
+
+  &-1 {
+    position: relative;
+    background: $mainColor;
+    width: 200px;
+  }
+
+  &-2 {
+    position: relative;
+    background: $mainColor;
+    width: 100px;
+  }
+
+  &-bar {
+    height: 50px;
+  }
+}
+
+.counter {
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  display: flex;
+  height: 100px;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 111px;
+  clip-path: polygon(0 0, 100% 0, 100% 100px, 0 100px);
+
+  &-1, &-2, &-3 {
+    position: relative;
+    top: -15px;
+  }
+}
+
+.num1offset1 {
+  position: relative;
+  right: -25px;
+}
+
+.num1offset2 {
+  position: relative;
+  right: -10px;
 }
